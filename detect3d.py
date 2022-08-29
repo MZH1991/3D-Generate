@@ -19,8 +19,8 @@ ims = 27
 correct = 0
 total = 0
 
-oripixel = 64 #原始像素数量
-noipixel = 48 #干扰像素数量
+oripixel = 64 
+noipixel = 48 
 
 for numk in range(1,2001): 
 
@@ -40,8 +40,8 @@ for numk in range(1,2001):
 
 
 
-    a1 = np.zeros((3,7)) #三行七列
-    a2 = np.zeros((3,7)) #三行七列
+    a1 = np.zeros((3,7)) 
+    a2 = np.zeros((3,7)) 
 
     OD = np.zeros(27)
 
