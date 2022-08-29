@@ -7,11 +7,11 @@ import os
 Allomatrix = np.array([[0,1],[1,1],[1,0],[1,-1],[0,-1],[-1,-1],[-1,0],[-1,1]])  #一个八个方向，每个数组代表一个方向移动，
 Sect0 = 40
 # cata = 'test'
-imgsize = 5001  #图片数量
-oripixel = 64 #原始像素数量
-noipixel = 64 #干扰像素数量
+imgsize = 5001  
+oripixel = 64 
+noipixel = 64 
 bkgrate = 0   
-def move(direction, img):   #图像移动
+def move(direction, img):   
     assert direction in [-1, 0, 1], "direction should be in [-1, 0, 1]"
     if direction == 0:
         return img
@@ -20,7 +20,7 @@ def move(direction, img):   #图像移动
     elif direction == -1:
         return np.concatenate((np.zeros(img.shape[1]).reshape(1, -1), img[:-1]), axis = 0)
 
-ims = 27 #说明图片的格式是27*27像素
+ims = 27 
 for numk in range(1,imgsize):
     nn = 0
     nnn = 0
@@ -30,9 +30,8 @@ for numk in range(1,imgsize):
     folder2 = 'F:/Data Base/learning/shift' + str(oripixel) + str(noipixel) + '/after/' 
     folder3 = 'F:/Data Base/learning/shift' + str(oripixel) + str(noipixel) + '/label/'
 
-    #获取此py文件路径，在此路径选创建在new_folder文件夹中的test文件夹
     
-    if not os.path.exists(folder1): #创建文件夹,搜索是否存在文件夹，若不存在，则创建文件夹。
+    if not os.path.exists(folder1): 
         os.makedirs(folder1)
     if not os.path.exists(folder2):
         os.makedirs(folder2)
