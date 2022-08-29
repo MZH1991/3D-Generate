@@ -4,7 +4,7 @@ import math
 import seaborn as sns
 from sklearn.preprocessing import OneHotEncoder
 import os
-Allomatrix = np.array([[0,1],[1,1],[1,0],[1,-1],[0,-1],[-1,-1],[-1,0],[-1,1]])  #一个八个方向，每个数组代表一个方向移动，
+Allomatrix = np.array([[0,1],[1,1],[1,0],[1,-1],[0,-1],[-1,-1],[-1,0],[-1,1]]) 
 Sect0 = 40
 # cata = 'test'
 imgsize = 5001  
